@@ -1,0 +1,239 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+header {
+    background: #8B0000;
+    color: #fff;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s;
+    font-family: 'Playfair Display', serif;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+section {
+    padding: 60px 20px;
+    margin: 0;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80vh;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                #8B0000;
+    padding: 0 5%;
+    background-image: url('../img/mongol.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    margin-left: 5%;
+}
+
+.btn {
+    display: inline-block;
+    background: #FFD700;
+    color: #8B0000;
+    padding: 12px 25px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1em;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #8B0000;
+    color: #FFD700;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#secao2 {
+    background: #f8f1e5;
+}
+
+.conquistas-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.conquista {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 280px;
+    transition: transform 0.3s;
+}
+
+.conquista:hover {
+    transform: translateY(-10px);
+}
+
+.conquista-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#secao3 {
+    background: #e8d8b5;
+}
+
+.historia-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.historia-text {
+    flex: 1;
+}
+
+.bandeira-imperio {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #8B0000;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+#secao4 {
+    background: #d9c7a7;
+    text-align: center;
+}
+
+.contato-form {
+    max-width: 500px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contato-form input, 
+.contato-form textarea {
+    padding: 12px;
+    border: 2px solid #8B0000;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+
+.contato-form textarea {
+    height: 150px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 0;
+    background: #333;
+    color: #FFD700;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: #FFD700;
+    margin: 0 15px;
+    font-size: 1.8em;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .hero {
+        flex-direction: column;
+        padding: 60px 20px;
+        text-align: center;
+    }
+    
+    .hero-image {
+        max-width: 100%;
+        margin: 30px 0 0 0;
+    }
+    
+    .conquistas-container {
+        flex-direction: column;
+    }
+    
+    .historia-content {
+        flex-direction: column;
+    }
+    
+    .mapa-imperio {
+        margin-top: 30px;
+    }
+}
