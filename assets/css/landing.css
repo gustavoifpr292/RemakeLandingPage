@@ -80,8 +80,8 @@ section {
 
 .btn {
     display: inline-block;
-    background: #FFD700;
-    color: #8B0000;
+    background: rgb(13, 110, 253);
+    color: white;
     padding: 12px 25px;
     margin-top: 20px;
     border-radius: 5px;
@@ -95,8 +95,8 @@ section {
 }
 
 .btn:hover {
-    background: #8B0000;
-    color: #FFD700;
+    background: rgb(0, 77, 175);
+    color: white;
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
